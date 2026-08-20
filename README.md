@@ -2,9 +2,9 @@
 
 [中文说明](#中文说明) | [English documentation](#english-documentation)
 
-Release candidate: `0.1.0`, full guarded-writeback edition. The repository owner has selected this capability scope and accepted the documented residual concurrency risk. That decision permits publication of the feature; it does not make Xunji writes atomic, conditionally protected, or exactly once.
+Release candidate: `0.1.0`, full guarded-writeback edition. The repository owner has selected this capability scope and accepted the documented residual concurrency risk.
 
-发布候选版本：`0.1.0`，包含完整的受保护写回功能。仓库所有者已选择该功能范围，并接受文档中说明的残余并发风险。该决定允许发布此功能，但不代表训记写入具备原子性、条件写入保护或“恰好一次”保证。
+发布候选版本：`0.1.0`，包含完整的受保护写回功能。仓库所有者已选择该功能范围，并接受文档中说明的残余并发风险
 
 ## 中文说明
 
