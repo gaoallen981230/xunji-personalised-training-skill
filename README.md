@@ -6,10 +6,6 @@ Release candidate: `0.1.0`, full guarded-writeback edition. The repository owner
 
 发布候选版本：`0.1.0`，包含完整的受保护写回功能。仓库所有者已选择该功能范围，并接受文档中说明的残余并发风险。该决定允许发布此功能，但不代表训记写入具备原子性、条件写入保护或“恰好一次”保证。
 
-Static scan status: SkillSpector 2.5.1 `--no-llm` successfully ran every enabled analyser and fully inspected 13 of 13 Skill files. The overall result is risk score 7, severity `LOW`, recommendation `SAFE`; one `LP3` issue is still reported with issue severity `MEDIUM` and confidence 0.7 because the scanner requests a `permissions` field that the official Skill format does not accept in `SKILL.md`. Semantic LLM analysers were disabled by the requested `--no-llm` mode. NVIDIA tracks this schema-remediation conflict in [SkillSpector issue #314](https://github.com/NVIDIA/SkillSpector/issues/314). This is disclosed rather than described as a zero-finding or full-semantic scan.
-
-静态扫描状态：SkillSpector 2.5.1 的 `--no-llm` 扫描成功运行全部已启用分析器，并完整检查 13/13 个 Skill 文件。总体结果为风险分数 7、严重度 `LOW`、建议 `SAFE`；同时仍报告一项 `LP3`，该问题自身严重度为 `MEDIUM`、置信度 0.7。原因是扫描器要求在 `SKILL.md` 中加入官方 Skill 格式不接受的 `permissions` 字段。按要求，语义 LLM 分析器在 `--no-llm` 模式下被禁用；NVIDIA 已在 [SkillSpector issue #314](https://github.com/NVIDIA/SkillSpector/issues/314) 记录该规范冲突。本项目如实披露，不将其表述为“零发现”或“完整语义扫描”。
-
 ## 中文说明
 
 这是一个面向通用训练需求的 Codex Skill。用户可以自行定义训练方向、优先级、衡量指标、每周时间、可用器械、经验、偏好和限制；Skill 据此生成可以人工审核和调整的个性化训练计划，不预设任何人的训练方案或特定专项。
@@ -27,7 +23,6 @@ Static scan status: SkillSpector 2.5.1 `--no-llm` successfully ran every enabled
 ### 主要优点
 
 - **高度个性化**：训练方向和成功指标由用户定义，而不是套用固定模板。
-- **本地优先**：档案、计划、缓存和清单保存在用户选择的本地路径；示例和测试只使用合成数据。
 - **证据驱动**：计划变化必须与训记记录、用户反馈或明确标注的假设对应。
 - **写入难以误触**：训练数据 Key 只提供技术访问，不代表写入授权；每次写回都需要当前摘要、绑定摘要值和后续明确确认。
 - **可复核**：写入后强制重新读取完整数据，检查日期、标题、训练身份、动作顺序、组数和目标字段。
