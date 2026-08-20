@@ -1,0 +1,253 @@
+{
+  "schema_version": "xunji_weekly_plan_v1",
+  "profile_id": "synthetic-example-athlete",
+  "week_start": "2030-01-07",
+  "status": "draft",
+  "evidence": {
+    "facts": [
+      "The synthetic profile allows three sessions of up to 60 minutes"
+    ],
+    "user_reported": [],
+    "derived": [
+      "Three sessions fit the synthetic preferred days"
+    ],
+    "assumptions": [
+      "Use technique-led loads because no real Xunji history is present"
+    ],
+    "unconfirmed": [
+      "Confirm every Chinese movement name against the current Xunji movement list before a real write"
+    ]
+  },
+  "change_summary": [
+    "Synthetic first-week draft with two mixed resistance sessions and one aerobic-functional session",
+    "No target load is prescribed; zero-kilogram fields are technical placeholders"
+  ],
+  "sessions": [
+    {
+      "session_key": "synthetic-2030-01-07-a",
+      "goal_tags": [
+        "hypertrophy",
+        "fat_loss"
+      ],
+      "reason": "Practise repeatable full-body resistance work while retaining time for aerobic activity",
+      "estimated_minutes": 50,
+      "xunji_payload": {
+        "datestr": "2030-01-07",
+        "title": "合成示例：全身训练 A",
+        "note": {
+          "text": "Synthetic example. Validate movement names and choose loads from current ability."
+        },
+        "movements": [
+          {
+            "name": "跑步",
+            "sets": [
+              {
+                "time": "600",
+                "done": false
+              }
+            ]
+          },
+          {
+            "name": "高脚杯深蹲",
+            "note": "Zero kilograms is a technical placeholder, not a target load.",
+            "sets": [
+              {
+                "weight": "0",
+                "unit": "kg",
+                "reps": "10",
+                "done": false
+              },
+              {
+                "weight": "0",
+                "unit": "kg",
+                "reps": "10",
+                "done": false
+              }
+            ]
+          },
+          {
+            "name": "俯卧撑",
+            "sets": [
+              {
+                "selfWeight": true,
+                "reps": "8",
+                "done": false
+              },
+              {
+                "selfWeight": true,
+                "reps": "8",
+                "done": false
+              }
+            ]
+          },
+          {
+            "name": "平板支撑",
+            "sets": [
+              {
+                "time": "30",
+                "done": false
+              },
+              {
+                "time": "30",
+                "done": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "session_key": "synthetic-2030-01-09-b",
+      "goal_tags": [
+        "fat_loss",
+        "functional_fitness"
+      ],
+      "reason": "Build sustainable aerobic work and task-specific carry capacity",
+      "estimated_minutes": 45,
+      "xunji_payload": {
+        "datestr": "2030-01-09",
+        "title": "合成示例：有氧与搬运",
+        "note": {
+          "text": "Synthetic example. Keep a conversational aerobic effort and stop at any profile stop rule."
+        },
+        "movements": [
+          {
+            "name": "跑步",
+            "sets": [
+              {
+                "time": "1200",
+                "done": false
+              }
+            ]
+          },
+          {
+            "name": "农夫走",
+            "note": "Synthetic balanced carry; validate the standard movement name before writing.",
+            "sets": [
+              {
+                "time": "30",
+                "done": false
+              },
+              {
+                "time": "30",
+                "done": false
+              }
+            ]
+          },
+          {
+            "name": "登台阶",
+            "sets": [
+              {
+                "reps": "8",
+                "done": false
+              },
+              {
+                "reps": "8",
+                "done": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "session_key": "synthetic-2030-01-12-c",
+      "goal_tags": [
+        "hypertrophy",
+        "functional_fitness"
+      ],
+      "reason": "Repeat stable movement patterns and practise controlled unilateral work",
+      "estimated_minutes": 50,
+      "xunji_payload": {
+        "datestr": "2030-01-12",
+        "title": "合成示例：全身训练 B",
+        "note": {
+          "text": "Synthetic example. Use a conservative first-week dose and record structured RPE."
+        },
+        "movements": [
+          {
+            "name": "哑铃卧推",
+            "note": "Zero kilograms is a technical placeholder, not a target load.",
+            "sets": [
+              {
+                "weight": "0",
+                "unit": "kg",
+                "reps": "10",
+                "done": false
+              },
+              {
+                "weight": "0",
+                "unit": "kg",
+                "reps": "10",
+                "done": false
+              }
+            ]
+          },
+          {
+            "name": "哑铃箭步蹲",
+            "note": "Synthetic movement; stop if balance or symptoms cross the profile rule.",
+            "sets": [
+              {
+                "weight": "0",
+                "unit": "kg",
+                "reps": "8",
+                "done": false
+              },
+              {
+                "weight": "0",
+                "unit": "kg",
+                "reps": "8",
+                "done": false
+              }
+            ]
+          },
+          {
+            "name": "单臂哑铃划船",
+            "note": "Zero kilograms is a technical placeholder, not a target load.",
+            "sets": [
+              {
+                "weight": "0",
+                "unit": "kg",
+                "reps": "10",
+                "done": false
+              },
+              {
+                "weight": "0",
+                "unit": "kg",
+                "reps": "10",
+                "done": false
+              }
+            ]
+          },
+          {
+            "name": "平板支撑",
+            "sets": [
+              {
+                "time": "30",
+                "done": false
+              },
+              {
+                "time": "30",
+                "done": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "progressions": [
+    {
+      "movement_name": "高脚杯深蹲",
+      "changed_variables": [
+        "repetitions"
+      ],
+      "reason": "Synthetic illustration of a single-variable progression",
+      "regression_gate": "Hold or reduce if technique, completion, recovery, or symptoms worsen"
+    }
+  ],
+  "write_control": {
+    "explicit_confirmation_required": true,
+    "confirmed": false
+  }
+}

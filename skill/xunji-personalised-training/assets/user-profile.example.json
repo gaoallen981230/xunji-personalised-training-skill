@@ -1,0 +1,151 @@
+{
+  "schema_version": "xunji_training_profile_v1",
+  "profile_id": "synthetic-example-athlete",
+  "locale": "en-GB",
+  "timezone": "Europe/London",
+  "units": "metric",
+  "goals": [
+    {
+      "type": "hypertrophy",
+      "priority": 0.4,
+      "outcome": "Build general muscle while keeping sessions repeatable",
+      "time_horizon_weeks": 8,
+      "success_metrics": [
+        "Complete at least 85 percent of planned resistance sets",
+        "Increase repetitions at stable technique and recovery"
+      ]
+    },
+    {
+      "type": "fat_loss",
+      "priority": 0.35,
+      "outcome": "Increase sustainable weekly activity while retaining strength",
+      "time_horizon_weeks": 8,
+      "success_metrics": [
+        "Complete three planned sessions per week",
+        "Maintain recent resistance-training performance"
+      ]
+    },
+    {
+      "type": "functional_fitness",
+      "priority": 0.25,
+      "outcome": "Carry shopping and climb stairs with less fatigue",
+      "time_horizon_weeks": 8,
+      "success_metrics": [
+        "Complete a synthetic six-minute carry and step test with stable technique"
+      ]
+    }
+  ],
+  "functional_targets": [
+    {
+      "capacity": "loaded_carry_endurance",
+      "task": "Carry two balanced loads while walking",
+      "assessment": "Synthetic six-minute carry with stable posture and no stop signal"
+    },
+    {
+      "capacity": "step_endurance",
+      "task": "Climb repeated flights of stairs",
+      "assessment": "Synthetic controlled step test at a repeatable pace"
+    }
+  ],
+  "availability": {
+    "sessions_per_week": 3,
+    "available_days": [
+      "monday",
+      "wednesday",
+      "friday",
+      "saturday",
+      "sunday"
+    ],
+    "preferred_days": [
+      "monday",
+      "wednesday",
+      "saturday"
+    ],
+    "fixed_days": [],
+    "session_duration_minutes": {
+      "default": 50,
+      "maximum": 60
+    },
+    "minimum_rest_days_per_week": 2
+  },
+  "training_background": {
+    "overall_level": "novice",
+    "resistance_years": 0.5,
+    "endurance_years": 0.5,
+    "recent_consistency_weeks": 4,
+    "current_weekly_sessions": 2
+  },
+  "equipment": {
+    "environments": [
+      "home",
+      "basic_gym"
+    ],
+    "available": [
+      "bodyweight",
+      "adjustable_dumbbells",
+      "bench",
+      "treadmill"
+    ],
+    "unavailable": [
+      "sled",
+      "rowing_ergometer"
+    ]
+  },
+  "preferences": {
+    "liked_movements": [
+      "walking",
+      "dumbbell_press"
+    ],
+    "required_movements": [],
+    "excluded_movements": [
+      "synthetic_excluded_movement"
+    ],
+    "avoid_patterns": [],
+    "session_style": [
+      "simple",
+      "repeatable"
+    ],
+    "exercise_order_rules": []
+  },
+  "health_and_safety": {
+    "medical_clearance": "not_required",
+    "clinician_constraints": [],
+    "red_flags": [],
+    "current_symptoms": [],
+    "stop_pain_score": 3,
+    "stop_rules": [
+      "Stop for new or worsening neurological symptoms",
+      "Stop for chest pain, fainting, or severe unexplained breathlessness",
+      "Stop when technique cannot be maintained"
+    ]
+  },
+  "progression": {
+    "variable_order": [
+      "repetitions",
+      "sets",
+      "load"
+    ],
+    "max_variables_per_movement_per_week": 1,
+    "maximum_sets_per_movement": 4,
+    "deload": {
+      "mode": "readiness_triggered",
+      "minimum_successful_weeks_before_review": 3
+    },
+    "regression_triggers": [
+      "Incomplete planned work",
+      "Higher RPE at unchanged work",
+      "Declining recovery",
+      "New symptoms or unstable technique"
+    ]
+  },
+  "xunji": {
+    "read_records": false,
+    "write_policy": "review_then_explicit_confirm",
+    "use_full_data_for_weekly_review": true,
+    "use_full_data_for_verification": true,
+    "omit_planned_session_duration": true
+  },
+  "unconfirmed": [
+    "This is synthetic example data and must be replaced before real use"
+  ]
+}

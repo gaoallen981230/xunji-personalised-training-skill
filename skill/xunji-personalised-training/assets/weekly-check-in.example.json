@@ -1,0 +1,28 @@
+{
+  "schema_version": "xunji_weekly_checkin_v1",
+  "profile_id": "synthetic-example-athlete",
+  "week_start": "2030-01-07",
+  "source": "synthetic_example",
+  "completion": {
+    "planned_sessions": 2,
+    "completed_sessions": 2,
+    "user_corrections": []
+  },
+  "recovery": {
+    "sleep_quality_0_to_10": 8,
+    "recovery_0_to_10": 8,
+    "stress_0_to_10": 3,
+    "soreness_0_to_10": 2,
+    "trend": "stable"
+  },
+  "symptoms": {
+    "red_flags": [],
+    "current": [],
+    "maximum_pain_0_to_10": 0
+  },
+  "schedule_changes": [],
+  "movement_feedback": [],
+  "unconfirmed": [
+    "Synthetic check-in only"
+  ]
+}

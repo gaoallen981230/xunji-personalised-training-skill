@@ -1,0 +1,182 @@
+{
+  "schema_version": "personalised_training_plan_v1",
+  "profile_id": "synthetic-example-athlete",
+  "week_start": "2030-01-07",
+  "status": "draft",
+  "evidence": {
+    "facts": [
+      "The synthetic profile allows three sessions of up to 60 minutes"
+    ],
+    "user_reported": [],
+    "derived": [
+      "Three sessions fit the synthetic preferred days"
+    ],
+    "assumptions": [
+      "Use technique-led starting doses because no comparable history is present"
+    ],
+    "unconfirmed": []
+  },
+  "change_summary": [
+    "Synthetic offline first-week draft with two resistance sessions and one aerobic-functional session",
+    "No remote import or write is requested"
+  ],
+  "sessions": [
+    {
+      "session_key": "synthetic-offline-2030-01-07-a",
+      "date": "2030-01-07",
+      "title": "Synthetic full-body session A",
+      "goal_tags": [
+        "hypertrophy",
+        "fat_loss"
+      ],
+      "reason": "Practise repeatable full-body resistance work while retaining time for aerobic activity",
+      "estimated_minutes": 50,
+      "programme": {
+        "movements": [
+          {
+            "name": "Brisk walk",
+            "sets": [
+              {
+                "time": 600
+              }
+            ]
+          },
+          {
+            "name": "Bodyweight squat",
+            "sets": [
+              {
+                "selfWeight": true,
+                "reps": 10
+              },
+              {
+                "selfWeight": true,
+                "reps": 10
+              }
+            ]
+          },
+          {
+            "name": "Incline press-up",
+            "sets": [
+              {
+                "selfWeight": true,
+                "reps": 8
+              },
+              {
+                "selfWeight": true,
+                "reps": 8
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "session_key": "synthetic-offline-2030-01-09-b",
+      "date": "2030-01-09",
+      "title": "Synthetic aerobic and carry session",
+      "goal_tags": [
+        "fat_loss",
+        "functional_fitness"
+      ],
+      "reason": "Build sustainable aerobic work and task-specific carry capacity",
+      "estimated_minutes": 45,
+      "programme": {
+        "movements": [
+          {
+            "name": "Brisk walk",
+            "sets": [
+              {
+                "distance_m": 2000
+              }
+            ]
+          },
+          {
+            "name": "Balanced carry",
+            "sets": [
+              {
+                "time": 30
+              },
+              {
+                "time": 30
+              }
+            ]
+          },
+          {
+            "name": "Step-up",
+            "sets": [
+              {
+                "reps": 8
+              },
+              {
+                "reps": 8
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "session_key": "synthetic-offline-2030-01-12-c",
+      "date": "2030-01-12",
+      "title": "Synthetic full-body session B",
+      "goal_tags": [
+        "hypertrophy",
+        "functional_fitness"
+      ],
+      "reason": "Repeat stable movement patterns and practise controlled unilateral work",
+      "estimated_minutes": 50,
+      "programme": {
+        "movements": [
+          {
+            "name": "Dumbbell floor press",
+            "sets": [
+              {
+                "reps": 10
+              },
+              {
+                "reps": 10
+              }
+            ]
+          },
+          {
+            "name": "Supported split squat",
+            "sets": [
+              {
+                "reps": 8
+              },
+              {
+                "reps": 8
+              }
+            ]
+          },
+          {
+            "name": "One-arm dumbbell row",
+            "sets": [
+              {
+                "reps": 10
+              },
+              {
+                "reps": 10
+              }
+            ]
+          },
+          {
+            "name": "Front plank",
+            "sets": [
+              {
+                "time": 30
+              },
+              {
+                "time": 30
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "progressions": [],
+  "write_control": {
+    "remote_write_requested": false
+  }
+}

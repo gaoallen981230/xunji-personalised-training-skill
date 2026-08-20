@@ -1,0 +1,29 @@
+name: Validate Skill
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Run offline unit tests
+        env:
+          XUNJI_API_KEY: "synthetic-test-key"
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Run release gate
+        run: python3 scripts/release_gate.py

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Xunji Personalised Training"
+  short_description: "Personalise Xunji plans, reviews and safe writeback"
+  default_prompt: "Use $xunji-personalised-training to build a personalised, reviewable training plan for my goals."
+policy:
+  allow_implicit_invocation: false

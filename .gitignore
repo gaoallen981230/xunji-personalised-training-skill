@@ -1,0 +1,28 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Real local user data
+training-profile.json
+weekly-check-in.json
+weekly-plan.json
+*.manifest.json
+*.payload.json
+*.api-response.json
+.xunji-cache/
+xunji-cache/
+release-report.json
+
+# Editors
+.idea/
+.vscode/
+*~
